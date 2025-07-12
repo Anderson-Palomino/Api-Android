@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Nombre del alumno -->
+        <TextView
+            android:id="@+id/txtAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anderson Palomino"
+            android:gravity="end"
+            android:textColor="#D50000"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <!-- IDMEAL -->
+        <TextView
+            android:text="IDMEAL"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtIdMeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black" />
+
+        <!-- STRMEAL -->
+        <TextView
+            android:text="STRMEAL"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black" />
+
+        <!-- STRCATEGORY -->
+        <TextView
+            android:text="STRCATEGORY"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black" />
+
+        <!-- STRAREA -->
+        <TextView
+            android:text="STRAREA"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black" />
+
+        <!-- STRYOUTUBE -->
+        <TextView
+            android:text="STRYOUTUBE"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtYoutube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <!-- Imagen -->
+        <ImageView
+            android:id="@+id/imgDetalle"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop" />
+
+        <!-- Botón volver -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVolver"
+            android:text="VOLVER"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:strokeColor="@android:color/holo_blue_dark"
+            android:textColor="@android:color/holo_blue_dark" />
+
+    </LinearLayout>
+</ScrollView>
