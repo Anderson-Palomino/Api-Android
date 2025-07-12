@@ -66,8 +66,8 @@ class DetailActivity : AppCompatActivity() {
         binding.txtArea.text = "Origen: ${meal.strArea}"
         binding.txtIdMeal.text = "ID: ${meal.idMeal}"
 
-        binding.txtYoutube.text=meal.strYoutube
-        //binding.txtYoutube.text = "Ver en YouTube 🎬"
+        //binding.txtYoutube.text=meal.strYoutube
+        binding.txtYoutube.text = "Ver en YouTube 🎬"
         binding.txtYoutube.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(meal.strYoutube))
             startActivity(intent)
