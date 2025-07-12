@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@android:color/white"
+    android:background="@android:color/black"
     android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:maxWidth="600dp">
 
         <!-- Nombre del alumno -->
         <TextView
@@ -28,7 +31,7 @@
             android:textAllCaps="true"
             android:layout_marginTop="12dp"
             android:textSize="16sp"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -36,7 +39,7 @@
             android:id="@+id/txtIdMeal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/white" />
 
         <!-- STRMEAL -->
         <TextView
@@ -45,7 +48,7 @@
             android:textAllCaps="true"
             android:layout_marginTop="12dp"
             android:textSize="16sp"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -53,7 +56,7 @@
             android:id="@+id/txtNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/white" />
 
         <!-- STRCATEGORY -->
         <TextView
@@ -62,7 +65,7 @@
             android:textAllCaps="true"
             android:layout_marginTop="12dp"
             android:textSize="16sp"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -70,7 +73,7 @@
             android:id="@+id/txtCategoria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/white" />
 
         <!-- STRAREA -->
         <TextView
@@ -79,7 +82,7 @@
             android:textAllCaps="true"
             android:layout_marginTop="12dp"
             android:textSize="16sp"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -87,7 +90,7 @@
             android:id="@+id/txtArea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/white" />
 
         <!-- STRYOUTUBE -->
         <TextView
@@ -96,7 +99,7 @@
             android:textAllCaps="true"
             android:layout_marginTop="12dp"
             android:textSize="16sp"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -104,8 +107,9 @@
             android:id="@+id/txtYoutube"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_light"
             android:autoLink="web"
-            android:textColor="@android:color/holo_blue_dark" />
+            android:textSize="14sp" />
 
         <!-- Imagen -->
         <ImageView
@@ -124,9 +128,7 @@
             android:layout_marginTop="24dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:strokeColor="@android:color/holo_blue_dark"
-            android:textColor="@android:color/holo_blue_dark" />
-
+            android:backgroundTint="@android:color/holo_purple"
+            android:textColor="@android:color/white" />
     </LinearLayout>
 </ScrollView>

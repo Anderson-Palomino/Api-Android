@@ -2,35 +2,76 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:padding="16dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black">
+    android:background="@android:color/black"
+    android:fitsSystemWindows="true">
 
-    <!-- Filtro con MaterialAutoCompleteTextView -->
-    <com.google.android.material.textfield.TextInputLayout
+    <!-- Barra superior con nombre -->
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Selecciona categoría"
-        app:endIconMode="dropdown_menu">
+        android:layout_height="?attr/actionBarSize"
+        android:paddingHorizontal="16dp">
 
-        <com.google.android.material.textfield.MaterialAutoCompleteTextView
-            android:id="@+id/autoCategoria"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="Anderson Palomino"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <!-- Contenedor principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp">
+
+        <!-- Filtro con MaterialAutoCompleteTextView -->
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="none"
-            android:focusable="false"
-            android:clickable="true"
-            android:textColor="@android:color/white"
-            android:backgroundTint="@android:color/white"
-            android:popupBackground="@android:color/darker_gray" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_marginBottom="16dp"
+            android:hint="Selecciona categoría"
+            app:endIconMode="dropdown_menu"
+            app:hintTextColor="@android:color/white"
+            app:boxStrokeColor="@android:color/white"
+            app:boxBackgroundColor="@android:color/transparent">
 
-    <!-- Lista de comidas -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerComidas"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1" />
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/autoCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="true"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:popupBackground="@android:color/darker_gray" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Título de la lista -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LISATADO DE COMIDAS"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp" />
+
+        <!-- RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerComidas"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
 </LinearLayout>
