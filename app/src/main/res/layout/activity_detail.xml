@@ -10,17 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!-- Nombre del alumno -->
-        <TextView
-            android:id="@+id/txtAlumno"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="AQUI PON TU NOMBRE"
-            android:gravity="end"
-            android:textColor="#D50000"
-            android:textStyle="bold"
-            android:textSize="16sp" />
-
         <!-- IDMEAL -->
         <TextView
             android:text="IDMEAL"
